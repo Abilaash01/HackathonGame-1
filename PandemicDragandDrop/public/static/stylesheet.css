@@ -13,11 +13,22 @@ h2{
     text-align: center;
     font-size: 3rem;
 }
-img{
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
-}
+
+    .Images{
+        vertical-align: middle;
+        display: flex;
+        margin-left:55%;
+        
+    }
+
+    .Images .droppable-elements{
+       display: inline;
+       margin:3rem;
+       align-items: right;
+    }
+
+
+
 body{
     background:linear-gradient( 90deg, #4788cd,#ce73da, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -55,6 +66,7 @@ body{
   .draggable:hover {
     opacity: 0.5;
   }
+
   .droppable {
     height: 6.5rem;
     width: 6.5rem;
