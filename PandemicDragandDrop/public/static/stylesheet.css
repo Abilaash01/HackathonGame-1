@@ -1,0 +1,55 @@
+h1{
+    color: yellow;
+    text-align: center;
+}
+h2{
+    color: #0f0f10 ;
+    text-align: center;
+    font-size: 3rem;
+}
+img{
+    text-align: right;
+}
+body{
+    background:linear-gradient( 90deg, #4788cd,#ce73da, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 45s ease infinite;
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    }
+}
+    
+    /* background: linear-gradient(270deg, #246655, #497cd8, #2ec09d);
+    background-size: 800% 800%;
+    
+    -webkit-animation: AnimationName 0s ease infinite;
+    -moz-animation: AnimationName 0s ease infinite;
+    animation: AnimationName 0s ease infinite;
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%} 
+    } */
+
+
+
