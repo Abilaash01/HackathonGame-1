@@ -29,8 +29,8 @@ const server = http.createServer(function(req,res){
         res.writeHead(200, {"Content-Type": "image/png"});
         fileStream.pipe(res);
 
-    }else if(req.url === "/test.js"){
-        fs.readFile("./public/test.js", function(error, data){
+    }else if(req.url === "/actions.js"){
+        fs.readFile("./public/actions.js", function(error, data){
             if(error){ 
                 res.writeHead(404,{'Content-Type':'text/js'});
                 res.write('Error: File Not Found')
