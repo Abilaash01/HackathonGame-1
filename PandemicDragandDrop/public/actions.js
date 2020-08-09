@@ -45,12 +45,39 @@ function drop(event) {
     const match = (dragElemData === dropElemData);
 
     if(match) {
+        if ( dragElemData=="mask"){
+            
+            alert("Nice Job!");
+            document.getElementById("video").src = "https://www.youtube.com/embed/lnP-uMn6q_U" ;
+        }
+        if ( dragElemData=="sanitizer"){
+
+            alert("Nice Job!");
+            document.getElementById("video").src = "https://www.youtube.com/embed/YBGsoimPXZg" ;
+
+        }
+        if ( dragElemData=="ruler"){
+
+            alert("Nice Job!");
+            document.getElementById("video").src = "https://www.youtube.com/embed/KXUT62G-IcU" ;
+             
+
+        }
+        if ( dragElemData=="soap"){
+
+            alert("Nice Job!");
+            document.getElementById("video").src = "https://www.youtube.com/embed/zUiciBFdMj8" ;
+            
+
+        }
+        
         const dragElem = document.getElementById(dragElemData);
         event.target.classList.add("dropped");
         event.target.style.backgroundColor = window.getComputedStyle(dragElem).color;
         dragElem.classList.add("dragged");
         dragElem.setAttribute("draggable", "false");
         event.target.insertAdjacentHTML("afterbegin", `<i class="fas fa-${draggableElementData}"></i>`);
+        
     } else {
         alert("Oops! That's not where that one goes. Let's try a different box.");
     }
